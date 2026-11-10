@@ -12,6 +12,6 @@ class tarefa(models.Model):
     terminado_em = models.DateTimeField(null=True)
     pessoa_responsavel = models.ForeignKey(Responsavel, on_delete=models.CASCADE)
 
-
-
-# Create your models here.
+class ferias(models.Model):
+    prazoinicio = models.DateTimeField(null = False, blank=False)
+    prazofinal = models.DateTimeField(null = False, blank=False)
