@@ -15,3 +15,10 @@ class tarefa(models.Model):
 class ferias(models.Model):
     prazoinicio = models.DateTimeField(null = False, blank=False)
     prazofinal = models.DateTimeField(null = False, blank=False)
+
+
+class grupo_da_sala(models.Model):
+    nome1 = models.CharField(max_length= 100, null=False, blank=False)
+    nome2 = models.CharField(max_length= 100, null=False, blank=False)
+    nome3 = models.CharField(max_length= 100, null=False, blank=False)
+    nome4 = models.CharField(max_length= 100, null=False, blank=False)
