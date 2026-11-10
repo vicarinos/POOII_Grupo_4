@@ -12,6 +12,9 @@ class tarefa(models.Model):
     terminado_em = models.DateTimeField(null=True)
     pessoa_responsavel = models.ForeignKey(Responsavel, on_delete=models.CASCADE)
 
+class mestre_dos_magos(models.Model):
+    name = models.CharField(max_length=100, null=False, blank = False)
+    deu_aula = models.DateTimeField(auto_now_add=True, null= False, blank=False)
 
 
 # Create your models here.
