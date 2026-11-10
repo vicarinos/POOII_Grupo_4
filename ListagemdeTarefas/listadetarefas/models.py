@@ -18,3 +18,6 @@ class mestre_dos_magos(models.Model):
 
 
 # Create your models here.
+class ferias(models.Model):
+    prazoinicio = models.DateTimeField(null = False, blank=False)
+    prazofinal = models.DateTimeField(null = False, blank=False)
