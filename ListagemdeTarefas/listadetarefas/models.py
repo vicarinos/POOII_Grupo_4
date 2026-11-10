@@ -13,6 +13,7 @@ class tarefa(models.Model):
     pessoa_responsavel = models.ForeignKey(Responsavel, on_delete=models.CASCADE)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class mestre_dos_magos(models.Model):
     name = models.CharField(max_length=100, null=False, blank = False)
     deu_aula = models.DateTimeField(auto_now_add=True, null= False, blank=False)
@@ -24,6 +25,8 @@ class ferias(models.Model):
     prazoinicio = models.DateTimeField(null = False, blank=False)
     prazofinal = models.DateTimeField(null = False, blank=False)
 >>>>>>> 43990852d97e7ea3a179f34fbf613aa750aad813
+=======
+
 class v(models.Model):
     titulo = models.CharField(max_length= 100, null=False, blank=False)
     criado_em = models.DateTimeField(auto_now_add=True, null= False, blank=False)
@@ -39,3 +42,5 @@ class grupo_da_sala(models.Model):
     nome2 = models.CharField(max_length= 100, null=False, blank=False)
     nome3 = models.CharField(max_length= 100, null=False, blank=False)
     nome4 = models.CharField(max_length= 100, null=False, blank=False)
+>>>>>>> cce5d925032d15e2cda3bfc9f6f0dfca50d7900f
+>>>>>>> 342a98656c796a59754086fcbc135a55ef08be92
