@@ -24,3 +24,9 @@ class ferias(models.Model):
     prazoinicio = models.DateTimeField(null = False, blank=False)
     prazofinal = models.DateTimeField(null = False, blank=False)
 >>>>>>> 43990852d97e7ea3a179f34fbf613aa750aad813
+class grupo_da_sala(models.Model):
+    nome1 = models.CharField(max_length= 100, null=False, blank=False)
+    nome2 = models.CharField(max_length= 100, null=False, blank=False)
+    nome3 = models.CharField(max_length= 100, null=False, blank=False)
+    nome4 = models.CharField(max_length= 100, null=False, blank=False)
+>>>>>>> cce5d925032d15e2cda3bfc9f6f0dfca50d7900f
